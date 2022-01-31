@@ -1,0 +1,126 @@
+/*DIGITAL CLOCK FONT*/
+@font-face{
+ font-family: Verdana;
+ font-weight: bold;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	color: #00ff00;
+	background-color: #000000;
+	font-family: 'digital-7', sans-serif;
+}
+
+.maintime {
+	
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    
+    padding: 0px 10px;
+    border: solid 5px #000;
+}
+.maindate {
+	
+    position: fixed;
+    top: 0px;
+    right: 0px;
+    font-size: 60px;
+    padding: 5px 0px;
+    padding-right:10px;
+    margin: 0px 5px;
+    border: solid 5px #000;
+}
+
+/* DAYS OF THE WEEK */
+/*
+div.days {
+	margin: 0 auto;
+	color: #131212;
+}
+
+div.days .day {
+	display: inline-block;
+}
+
+div.days .day p {
+	font-size: 12px;
+	font-weight: bold;
+	font-family: sans-serif;
+	text-transform: uppercase;
+}
+*/
+
+/* CLOCK */
+div.clock {
+	margin: 5px 0;
+}
+
+div.clock div{
+	display: inline-block;
+	position: relative;
+}
+
+div.clock div p{
+	font-size: 60px;
+	position: relative;
+	z-index: 100;
+}
+
+div.clock .placeholder {
+	color: #000000;
+	position: absolute;
+	top: 0;
+	z-index: 50;
+}/*END CLOCK*/
+
+
+/* AM OR PM*/
+.am-pm {
+	font-family: sans-serif;
+	text-transform: uppercase;
+	width: 30px;
+}
+
+div.am-pm div p {
+	font-weight: bold;
+	width: 100%;
+}
+
+.am, .pm {
+	color: #000000;
+}
+
+/*CLASS THAT CHANGES COLOR OF TEXT TO APPEAR LIKE ITS "ON"*/
+.light-on {
+	color: #00ff00;
+}
+
+/*slideshow*/
+.swiper-container {
+	width: 100%;
+	height: 100%;
+  }
+  .swiper-slide {
+	text-align: center;
+	font-size: 18px;
+	background: #fff;
+
+	/* Center slide text vertically */
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: -webkit-flex;
+	display: flex;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	-webkit-justify-content: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	-webkit-align-items: center;
+	align-items: center;
+  }

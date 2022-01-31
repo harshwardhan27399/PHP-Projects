@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title></title>
+  <script>
+		function printDiv(divName){
+			var printContents = document.getElementById(divName).innerHTML;
+			var originalContents = document.body.innerHTML;
+
+			document.body.innerHTML = printContents;
+
+			window.print();
+
+			document.body.innerHTML = originalContents;
+
+		}
+	</script>
+</head>
+<body>
+<div align="center" id="printdiv">
+
+<div>
+
+<center>
+<table width=40% style='border-style:solid;border-width:1px 0;'>
+  <tr>
+    <td align=center>Customer ID</td>
+    <td >Item ID</td>
+  </tr>
+  <tr>
+    <?php
+if(isset($_POST["getcertificate"]))
+{
+	
+	$id=$_POST["pname"];
+	
+}
+?>
+  </tr>
+  
+</table></center>
+</div>
+</div>
+<br>
+<br>
+<br>
+<center>
+<button onclick="printDiv('printdiv')">Print the invoice </button>
+<br>
+<br>
+<br>
+</center>
+</body>
+</html>
+
