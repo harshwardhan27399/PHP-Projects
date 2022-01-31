@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("petimages/rab.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Health tips for Rabbits</h1></center>
+   <p><li>If your bunny is kept outdoors then its hutch should be at least four feet long, two feet wide and two feet deep and should have a solid bottom. You should also make sure it is cleaned regularly and packed well with straw.</li></p>
+   <p><li>Rabbits have an unusual digestive system and re-ingest their droppings. This is why it’s important to give your bunny all the nutrients it needs. 
+
+Hay or grass are better for digestive health than nuggets (commercial rabbit pellets) and is needed for their gastrointestinal system to function properly. It should form the majority of your bunny’s diet. </li></p>
+    <p><li>Not getting enough physical activity can put your rabbit at risk of developing a condition called GI Statis, a potentially deadly condition in which the digestive system slows down or stops completely. </li></p>
+	 <p><li>Rabbits don’t show any outward signs of being in pain and can often be suffering unnoticeably. Look for changes in your bunny’s behaviour which can indicate illness or pain.</li></p>
+	  <p><li>In warm weather, it’s important to check fur/skin around bottom/tail areas at least once, if not twice a day. Urine staining and droppings that get stuck can attract flies, causing flystrike, which can prove fatal. </li></p>
+   </div>
+</body>
+</html>

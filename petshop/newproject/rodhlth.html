@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("petimages/rodent.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Health tips for Rodents</h1></center>
+  <p><li>Provide liberal amounts of fresh fruit and vegetables. Fruit and veggies should make up the majority of your mouse’s diet. Mice enjoy variety in their diets, so switch up the fruits and vegetables you give them each day.</li><p>
+  <p><li>Scatter the fruits and veggies inside their cage. It’s in a mouse’s nature to go looking for their food. In the wild, they would spend most of their day on the hunt for a meal. Scattering their food will also keep them entertained.</li><p>
+  <p><li>Hide the fruits and veggies. To give your mouse a little entertainment with their food, try hiding it. Put the fruit or veggies in a plastic bag or cardboard box - your mouse will have fun ripping and shredding the containers to get the food!</li><p>
+  <p><li>Purchase commercial mouse food. This food will only be a small part of your pet mouse’s diet. Buy mouse pellets to offer in small quantities throughout the day.You can buy mouse food at most pet stores.
+</li><p>
+  <p><li>Hide small quantities of pellets throughout the day. Hiding the treats allows your mouse to pretend it’s out in the wild. Your mouse will have fun searching for tasty pellet treats in their enclosure. Just make sure you don’t give them too much.</li><p>
+  </div>
+</body>
+</html>

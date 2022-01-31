@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("petimages/fish.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Health tips for Fish</h1></center>
+  
+  <p><li>Get the right size tank. The bigger that your fish will get, or the more of them that you have, the larger your tank will need to be. As a general rule, a freshwater fish that grows to be one inch length should have 4.5 liters (1.2 US gal) of water in the tank. A saltwater fish measuring the same size should have 2.5 liters (0.7 US gal) of water. Multiply these figures by the total number of fish that you have to decide which tank to purchase. </li></p>
+   <p><li>Place your tank in a good location. Fish tanks can be quite heavy, so invest in a quality stand and once you get it into position try not to move it around too often. Make sure to place your tank out of direct sunlight. It should also be on level ground to minimize the possibility of it tipping over.</li></p>
+    <p><li>Install your heater. Most fish require that the water in your tank maintains a specific temperature, usually between 72 and 84 degrees Fahrenheit. To keep the temperature regulated and steady, you’ll use a heater in your tank. Some heaters go under the gravel or other substrate. Others hang on the side of the tank. Follow the installation directions on the package. </li></p>
+	 <p><li>Condition the water and fill up your tank. Set aside enough water in buckets to fill up your tank. Treat the water with a de-chlorinating agent and wait until it takes full effect. The directions will be listed on the package. When the water is ready, gently pour it into the tank</li></p>
+	  <p><li>Spot clean your tank weekly. Get an algae pad or brush and scrub the interior sides of your tank. Keep going until all of the green or filmy white is removed and the glass is clear once more. Then, use a gravel siphon to remove 10-20% of the water in the tank. Try to suck up any debris or feces at the bottom of the tank. Fill the tank back up with treated water when you are finished.</li></p>
+</div>
+
+</body>
+</html>
