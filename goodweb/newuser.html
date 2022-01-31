@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <!-- Basic -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">   
+   
+    <!-- Mobile Metas -->
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+ 
+     <!-- Site Metas -->
+    <title>Registration: New User</title>  
+    <meta name="keywords" content="">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Site Icons -->
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="images/apple-touch-icon.png">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Site CSS -->
+    <link rel="stylesheet" href="style.css">  
+    <!-- Responsive CSS -->
+    <link rel="stylesheet" href="css/responsive.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+
+    <!-- Modernizer for Portfolio -->
+    <script src="js/modernizer.js"></script>
+			<script type="text/javascript">
+function matchpass(){
+var firstpassword=document.f1.password.value;
+var secondpassword=document.f1.cpassword.value;
+
+if(firstpassword==secondpassword){
+return true;
+}
+else{
+alert("password must be same!");
+document.getElementById("cpassword").focus();
+return false;
+}
+}
+</script>
+</head>
+<body>
+
+    <!-- LOADER -->
+    <div id="preloader">
+        <div class="loader">
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__bar"></div>
+			<div class="loader__ball"></div>
+		</div>
+    </div><!-- end loader -->
+    <!-- END LOADER -->
+    
+    <header class="header header_style_01">
+        <nav class="megamenu navbar navbar-default">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="index.html"><img src="images/logos/logo.png" alt="image"></a>
+                </div>
+                 <div id="navbar" class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav navbar-right">
+                        <li><a href="index.php">Home</a></li>
+                        <li><a href="about-us.html">About us</a></li>
+                        <li><a href="services.html">How to Play</a></li>
+						<li><a href="contact.html">Contact</a></li>
+                        <li><a href="feedback.php">Feedback</a></li>
+                        <li><a class="active" href="Login.html">Login</a></li>
+                        <!--li><a href="testimonials.html">Testimonials</a></li>
+                        <li><a href="pricing.html">Pricing</a></li-->
+						
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+   	
+
+    <div id="contact" class="section wb">
+        <div class="container">
+            
+            <div class="row">
+                <div class="col-md-8 col-md-offset-2">
+                    <div class="contact_form">
+                        <div id="error_message"></div>
+                        <form id="f1" class="row" action="register.php" name="f1" method="post" onsubmit="return matchpass()">
+                            <fieldset class="row-fluid">
+                                
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >First Name </h3>
+								   <input type="text" name="first_name" id="first_name" class="form-control" required placeholder="Enter First Name">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >Last Name </h3>
+								   <input type="text" name="last_name" id="last_name" class="form-control" required placeholder="Enter Last Name">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >E-mail </h3>
+								   <input type="email" name="email" id="email" class="form-control" required placeholder="Enter Email">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >Birth Date </h3>
+								   <input type="date" name="birthdate" id="birthdate" class="form-control" required placeholder="--/--/----">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >User Name </h3>
+								   <input type="text" name="user_name" id="user_name" class="form-control" required placeholder="Enter user Name">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >Password </h3>
+								   <input type="text" name="password" id="password" class="form-control" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" required placeholder="Enter Password">
+                                </div>
+								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                                   <h3 class="bars" >Confirm Password </h3>
+								   <input type="text" name="cpassword" id="cpassword" class="form-control" required placeholder="Confirm Password">
+                                </div>
+								 <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 text-center">
+                                    <button type="submit" value="SEND" id="submit1" class="btn btn-light btn-radius btn-brd grd1 btn-block">Register</button>
+                                </div>
+								
+                            </fieldset>
+                        </form>
+                    </div>
+                </div><!-- end col -->
+            </div><!-- end row -->
+		</div><!-- end container -->
+    </div><!-- end section -->
+
+   
+    <!-- ALL JS FILES -->
+    <script src="js/all.js"></script>
+    <!-- ALL PLUGINS -->
+    <script src="js/custom.js"></script>
+    <script src="js/portfolio.js"></script>
+    <script src="js/hoverdir.js"></script>    
+
+</body>
+</html>

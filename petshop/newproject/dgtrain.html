@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("dog/dog2.png");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Training tips for Dogs</h1></center>
+  <p><li>Choose your dog's name wisely and be respectful of it. Of course you'll want to pick a name for your new puppy or dog that you love, but for the purposes of training it also helps to consider a short name ending with a strong consonant. This allows you to say his name so that he can always hear it clearly. A strong ending (i.e. Jasper, Jack, Ginger) perks up puppy ears—especially when you place a strong emphasize at the end.</li></p>
+  <p><li>Set up his private den. He needs "a room of his own." From the earliest possible moment give your pup or dog his own, private sleeping place that's not used by anyone else in the family, or another pet.</li></p>
+  <p><li>Help him relax when he comes home. When your puppy gets home, give him a warm hot water bottle and put a ticking clock near his sleeping area. This imitates the heat and heartbeat of his litter mates and will soothe him in his new environment.</li></p>
+  <p><li>Reward his good behavior. Reward your puppy or dog's good behavior with positive reinforcement. Use treats, toys, love, or heaps of praise. Let him know when's he's getting it right. Likewise, never reward bad behaviour; it'll only confuse him.</li></p>
+  <p><li>End training sessions on a positive note. Excellent boy! Good job, Jasper! He's worked hard to please you throughout the training. Leave him with lots of praise, a treat, some petting, or five minutes of play. This guarantees he'll show up at his next class with his tail wagging—ready to work!</li></p>
+</div>
+
+</body>
+</html>

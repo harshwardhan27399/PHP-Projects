@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("petimages/cat.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Training tips for Cats</h1></center>
+   <p><li>Get a supply of treats. Cats need to be constantly rewarded with tasty treats in order to learn tricks. Keep plenty of your cats favorite bite-sized treats on hand when trying to train it. Give your cat frequent treats when training it in short sessions. </li><p>
+    <p><li>Get your cats attention. Your cat won’t want to learn tricks if its not in the mood. Starting by giving your cat a treat might get its attention. If your cat doesn’t act interested in learning a particular trick, dont force it to play—just be patient and try again later</li><p>
+    <p><li>Use a clicker. A pet clicker is a small device that makes a clicking sound. Each time your cat does something you want it to (like a trick), make the clicking sound and give it a treat. The sound and positive reinforcement (reward) of the treat condition your cat to repeat the behavior. </li><p>
+    <p><li>Keep training sessions short and frequent. Cats learn through repetition, so frequent training sessions will help them master a trick. Try repeating tricks several times each day. Keeping training sessions brief will also hold your cats attention so it will want to keep trying</li><p>
+    <p><li>Teach one trick at a time. Positive reinforcement like praise and treats as your cat learns a trick will help it to master the behavior. Trying to teach it more than one trick at a time can confuse it, however, because it may not understand what behavior is being rewarded. Wait until your cat has mastered one trick before moving on to the next</li></p>
+	<p><li>Train your cat to meow on command. Cats are capable of producing a wide range of vocal sounds (meows, chirps, trills, yowls, etc.), and they reserve most of them for communicating with humans. You can try training your cat to produce a meow or other sound on command. Just give your cat a treat when it makes the desired sound. After the cat begins to associate the treat with a reward, introduce a word like "meow" or "chirp" to create the command.</li><p>
+   </div>
+
+</body>
+</html>

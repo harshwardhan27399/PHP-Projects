@@ -1,0 +1,44 @@
+#breaking {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 32px;
+  font-weight: bold;
+  padding: 5px;
+  background: black;
+  color: #fff;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 999;
+}
+
+#newsTicker {
+  font-family: Arial, Helvetica, sans-serif;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  background: black;  
+  color: #fff;
+  font-size: 32px;
+  white-space: nowrap;
+  overflow: hidden;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  z-index: 998;
+}
+
+#newsTicker p {
+  margin: 0;
+  display: inline-block;
+  font-size: 32px;
+  padding-left: 100%;
+  animation: tickerTape 20s linear infinite;
+}
+
+@keyframes tickerTape {
+  0% {
+    transform: translate(0, 0);
+  }
+  100% {
+    transform: translate(-100%, 0);
+  }
+}

@@ -1,0 +1,3 @@
+required pattern="[A-Za-z]+" title="please enter valid firstname[a-z only]"
+required pattern="[A-Za-z]+" title="please enter valid lastname[a-z only]"
+ required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$" title="please enter valid email address" 

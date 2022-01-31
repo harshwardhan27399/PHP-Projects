@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("petimages/cat.jpg");
+  
+  /* Add the blur effect */
+  filter: blur(2px);
+  -webkit-filter: blur(2px);
+  
+  /* Full height */
+  height: 100%; 
+  
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: left;
+}
+</style>
+</head>
+<body>
+
+<div class="bg-image"></div>
+
+<div class="bg-text">
+  <center><h1 style="font-size:50px">Health tips for Cats</h1></center>
+  <p><li>Feed younger cats more than older cats. From the time cats are six months old through the time they grow to maturity, most cats need to be fed twice each day. After a cat reaches one year old, you can reduce the amount of food the cat is eating.</li></p>
+  <p><li>Choose the right place for you litter boxes. Place the litter boxes in open, clean, quiet, well-lit spaces where the cats can see all around them. A quiet corner of your living room or near the fireplace might be appropriate, depending on your homes layout.</li></p>
+  <p><li>Keep your cats feet clean. If your cat steps in anything sticky or unhygienic, it could not only make a mess, but also cause him or her problems when moving. Wipe your cats feet off with a damp cloth. If it stepped in something really yucky, consider bathing your cat's feet in a large bowl filled with a few inches of lukewarm water. </li></p>
+  <p><li>Check your cats gums and teeth regularly. They should be a healthy pink color, and its teeth should be white. If your cat’s teeth are yellow or brown, they have a buildup of tartar and plaque. Give your cat dental treats designed to reduce plaque and tartar.</li></p>
+  <p><li>Check your cats ears regularly. Each week, or every time you sit quietly with your cat, look in its ears for waxy buildup. If you see a lot of buildup, or detect a foul smell coming from its ears, your cat may have mites. Contact your vet if this is the case.</li></p>
+<p><li>Ensure your cats eyes are healthy.If you see significant buildup of crust in the corners or your cats eyes, wipe it away with a damp cotton ball. Tear-stained fur, constantly closed eyes, discharge, or a milky-looking surface on the corneas should be cause for concern. If you notice any of these conditions, contact your vet immediately.</li></p>
+  </div>
+
+</body>
+</html>
